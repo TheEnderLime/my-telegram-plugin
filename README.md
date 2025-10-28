@@ -23,11 +23,11 @@ External libraries
 
 ## Example 
 In the plugin:
--The user selects text in the editor
--The IDE triggers ``SendToTelegramAction.ActionPerformed()``   
--The plugin retrieves the selected text via the IDE API
--The text is sent to a Telegram chat using an HTTP POST request through OkHttp   
-Thus, the plugin extends IDE functionality by adding a new feature - sending selected code in Telegram   
+-The user selects text in the editor   
+-The IDE triggers ``SendToTelegramAction.ActionPerformed()``      
+-The plugin retrieves the selected text via the IDE API   
+-The text is sent to a Telegram chat using an HTTP POST request through OkHttp      
+Thus, the plugin extends IDE functionality by adding a new feature - sending selected code in Telegram      
 
 ---
 
