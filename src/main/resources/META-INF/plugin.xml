@@ -11,8 +11,9 @@
                 class="org.example.SendToTelegramAction"
                 text="Send to Telegram"
                 description="Sends selected text to a predefined Telegram user">
-            <keyboard-shortcut first-keystroke="ctrl T"
-                               second-keystroke="ctrl T"
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <keyboard-shortcut first-keystroke="ctrl \"
+                               second-keystroke="ctrl \"
                                keymap="$default">
 
             </keyboard-shortcut>
