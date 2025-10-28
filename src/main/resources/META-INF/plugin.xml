@@ -11,7 +11,9 @@
                 class="org.example.SendToTelegramAction"
                 text="Send to Telegram"
                 description="Sends selected text to a predefined Telegram user">
-            <keyboard-shortcut first-keystroke="ctrl \" second-keystroke="ctrl T" keymap="$default">
+            <keyboard-shortcut first-keystroke="ctrl T"
+                               second-keystroke="ctrl T"
+                               keymap="$default">
 
             </keyboard-shortcut>
         </action>

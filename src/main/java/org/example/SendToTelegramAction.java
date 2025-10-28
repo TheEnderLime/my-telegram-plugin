@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class SendToTelegramAction extends AnAction{
 
-    private static final String BOT_TOKEN = "Your bot token";
+    private static final String BOT_TOKEN = "Your Bot token";
     private static final String CHAT_ID = "Your chat id";
 
     @Override
