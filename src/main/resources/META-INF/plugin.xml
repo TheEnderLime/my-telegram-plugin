@@ -1,15 +1,29 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.theenderlime.mytelegramplugin</id>
-    <name>my-telegram-plugin</name>
+    <id>org.example.SendToTelegram</id>
+    <name>SendToTelegramPlugin</name>
     <vendor>theenderlime</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
+    <!-- Определяем действие -->
+    <actions>
+        <action id="SendToTelegram"
+                class="org.example.SendToTelegramAction"
+                text="Send to Telegram"
+                description="Sends selected text to a predefined Telegram user">
+            <keyboard-shortcut first-keystroke="ctrl \" second-keystroke="ctrl T" keymap="$default">
+
+            </keyboard-shortcut>
+        </action>
+    </actions>
+
+    <!-- Указываем пакет с локализацией, если есть -->
     <resource-bundle>messages.MyBundle</resource-bundle>
 
+    <!-- Дополнительные расширения -->
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.theenderlime.mytelegramplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.theenderlime.mytelegramplugin.startup.MyProjectActivity" />
+        <toolWindow factoryClass="com.github.theenderlime.mytelegramplugin.toolWindow.MyToolWindowFactory"
+                    id="MyToolWindow"/>
+        <postStartupActivity implementation="com.github.theenderlime.mytelegramplugin.startup.MyProjectActivity"/>
     </extensions>
 </idea-plugin>
